@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * {@inheritdoc}
+ */
+
+/**
+ * Implements hook_update_N().
+ */
+function phackage_core_update_9001(&$sandbox) {
+
+  $key_value = \Drupal::service('keyvalue');
+  $key_value->get('system.schema')->delete('google_analytics_counter');
+  $key_value->get('system.schema')->delete('pardot');
+  $key_value->get('system.schema')->delete('livechat');
+  $key_value->get('system.schema')->delete('migrate_ui');
+  $key_value->get('system.schema')->delete('views_breadcrumb');
+
+  // Particular site config install.
+  $config_path = \Drupal\Core\Site\Settings::get('config_sync_directory');
+  $source = new Drupal\Core\Config\FileStorage($config_path);
+
+  \Drupal::service('config.storage')
+    ->write('core.extension', $source->read('core.extension'));
+  \Drupal::service('config.storage')
+    ->write('filter.format.basic_html', $source->read('filter.format.basic_html'));
+}

@@ -1,0 +1,11 @@
+type: module
+name: 'Testimonial'
+description: 'Provides Basic page content type and related configuration by Insign.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Insign
+dependencies:
+  - drupal:field
+  - drupal:node
+  - drupal:language
+  - drupal:rdf
