@@ -2,7 +2,6 @@ type: module
 name: 'Paragraphs Set'
 description: 'A Paragraphs set by Insign.'
 core: 8.x
-core_version_requirement: ^8 || ^9
 package: Insign
 dependencies:
   - better_formats

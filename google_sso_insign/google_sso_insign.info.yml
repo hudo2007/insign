@@ -1,7 +1,6 @@
 name: Google SSO Insign
 description: Allow Insign google users to connect to drupal and automatically set up user roles based on Google's data.
 core: 8.x
-core_version_requirement: ^8 || ^9
 type: module
 package: Social
 dependencies:

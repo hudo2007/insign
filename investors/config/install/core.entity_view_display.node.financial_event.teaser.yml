@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.financial_event.field_financial_event_intro
     - field.field.node.financial_event.field_financial_event_locale
     - field.field.node.financial_event.field_financial_event_subtitle
+    - field.field.node.financial_event.field_google_analytics_counter
     - field.field.node.financial_event.field_meta_tags
     - field.field.node.financial_event.field_yoast_seo
     - node.type.financial_event
@@ -230,6 +231,13 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  google_analytics_counter:
+    label: hidden
+    type: textfield
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   show_title:
     weight: 100
     region: content
@@ -239,6 +247,7 @@ hidden:
   body: true
   field_financial_event_content: true
   field_financial_event_subtitle: true
+  field_google_analytics_counter: true
   field_meta_tags: true
   field_yoast_seo: true
   langcode: true

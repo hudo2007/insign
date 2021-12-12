@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_contrast
+    - field.field.node.page.field_google_analytics_counter
     - field.field.node.page.field_image_position
     - field.field.node.page.field_margin
     - field.field.node.page.field_meta_tags
@@ -277,6 +278,15 @@ content:
     third_party_settings: {  }
     type: yoast_seo_widget
     region: content
+  google_analytics_counter:
+    type: int
+    '#maxlength': 255
+    '#default_value': 0
+    '#description': 'This field stores Google Analytics pageviews.'
+    weight: 103
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   langcode:
     type: language_select
     weight: 2
@@ -363,3 +373,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+hidden:
+  field_google_analytics_counter: true

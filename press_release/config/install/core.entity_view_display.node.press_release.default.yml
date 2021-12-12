@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.press_release.body
     - field.field.node.press_release.field_contrast
+    - field.field.node.press_release.field_google_analytics_counter
     - field.field.node.press_release.field_image_position
     - field.field.node.press_release.field_margin
     - field.field.node.press_release.field_meta_tags
@@ -378,6 +379,7 @@ content:
             fi: false
             fi-def-at: false
 hidden:
+  field_google_analytics_counter: true
   field_meta_tags: true
   field_yoast_seo: true
   langcode: true

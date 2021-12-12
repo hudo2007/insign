@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.testimonial.body
+    - field.field.node.testimonial.field_google_analytics_counter
     - field.field.node.testimonial.field_meta_tags
     - field.field.node.testimonial.field_testimonial_content
     - field.field.node.testimonial.field_testimonial_cover
@@ -151,6 +152,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_google_analytics_counter: true
   field_meta_tags: true
   field_yoast_seo: true
   langcode: true

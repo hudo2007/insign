@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.news.body
     - field.field.node.news.field_contrast
+    - field.field.node.news.field_google_analytics_counter
     - field.field.node.news.field_image_position
     - field.field.node.news.field_margin
     - field.field.node.news.field_meta_tags
@@ -279,6 +280,13 @@ content:
     third_party_settings: {  }
     type: text_default
     region: ds_content
+  google_analytics_counter:
+    label: hidden
+    type: int
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   published_at:
     type: timestamp_ago
     weight: 3
@@ -295,6 +303,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_google_analytics_counter: true
   field_meta_tags: true
   field_yoast_seo: true
   langcode: true

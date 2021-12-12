@@ -778,6 +778,18 @@ display:
       title: 'Press Release most read'
       display_description: ''
       sorts:
+        field_google_analytics_counter_value:
+          id: field_google_analytics_counter_value
+          table: node__field_google_analytics_counter
+          field: field_google_analytics_counter_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
         sticky:
           id: sticky
           table: node_field_data

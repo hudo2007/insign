@@ -2,7 +2,6 @@ type: module
 name: News
 description: 'Provides News content type and related configuration by Insign.'
 core: 8.x
-core_version_requirement: ^8 || ^9
 package: Insign
 dependencies:
   - better_exposed_filters

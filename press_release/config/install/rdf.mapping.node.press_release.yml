@@ -29,6 +29,9 @@ fieldMappings:
   field_pr_files:
     properties:
       - ''
+  field_google_analytics_counter:
+    properties:
+      - ''
   field_pr_introduction:
     properties:
       - ''

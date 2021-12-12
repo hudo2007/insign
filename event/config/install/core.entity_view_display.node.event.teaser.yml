@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.event.field_event_introduction
     - field.field.node.event.field_event_locale
     - field.field.node.event.field_event_subtitle
+    - field.field.node.event.field_google_analytics_counter
     - field.field.node.event.field_image_position
     - field.field.node.event.field_margin
     - field.field.node.event.field_meta_tags
@@ -246,6 +247,13 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
+  google_analytics_counter:
+    label: hidden
+    type: textfield
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   node_event_link:
     weight: 0
     region: ds_content
@@ -257,6 +265,7 @@ hidden:
   field_contrast: true
   field_event_categories: true
   field_event_content: true
+  field_google_analytics_counter: true
   field_image_position: true
   field_margin: true
   field_meta_tags: true

@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.job.body
     - field.field.node.job.field_application_form
+    - field.field.node.job.field_google_analytics_counter
     - field.field.node.job.field_job_content
     - field.field.node.job.field_job_contract_type
     - field.field.node.job.field_job_cover
@@ -180,6 +181,7 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_google_analytics_counter: true
   field_job_contract_type: true
   field_job_place: true
   field_job_profession: true

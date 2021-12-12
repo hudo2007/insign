@@ -26,6 +26,9 @@ fieldMappings:
   field_general_assembly_cover:
     properties:
       - 'schema:image'
+  field_google_analytics_counter:
+    properties:
+      - ''
   field_general_assembly_intro:
     properties:
       - ''

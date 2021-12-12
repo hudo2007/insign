@@ -2,7 +2,6 @@ name: 'Phackage Core'
 type: module
 description: 'Provide base config for a Phackage site.'
 core: 8.x
-core_version_requirement: ^8 || ^9
 package: Other
 dependencies:
   - abjs
@@ -41,6 +40,7 @@ dependencies:
   - focal_point
   - geolocation_google_maps
   - google_analytics
+  - google_analytics_counter
   - google_analytics_reports
   - google_analytics_reports_api
   - google_tag

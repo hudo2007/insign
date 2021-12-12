@@ -2,7 +2,6 @@ type: module
 name: Newsletter
 description: 'Webform newsletter inscription compatible with GDPR'
 core: 8.x
-core_version_requirement: ^8 || ^9
 package: Insign
 dependencies:
   - block

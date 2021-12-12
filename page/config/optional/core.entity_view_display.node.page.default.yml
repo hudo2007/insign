@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_contrast
+    - field.field.node.page.field_google_analytics_counter
     - field.field.node.page.field_image_position
     - field.field.node.page.field_margin
     - field.field.node.page.field_meta_tags
@@ -228,7 +229,15 @@ content:
     third_party_settings: {  }
     type: text_default
     region: ds_content
+  google_analytics_counter:
+    label: hidden
+    type: int
+    weight: 109
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
+  field_google_analytics_counter: true
   field_meta_tags: true
   field_yoast_seo: true
   langcode: true

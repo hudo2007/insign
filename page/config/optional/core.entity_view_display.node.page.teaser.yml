@@ -5,6 +5,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
     - field.field.node.page.field_contrast
+    - field.field.node.page.field_google_analytics_counter
     - field.field.node.page.field_image_position
     - field.field.node.page.field_margin
     - field.field.node.page.field_meta_tags
@@ -185,6 +186,13 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  google_analytics_counter:
+    label: hidden
+    type: textfield
+    weight: 102
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   node_page_link:
     weight: 0
     region: ds_content
@@ -194,6 +202,7 @@ hidden:
   body: true
   breadcrumbs: true
   field_contrast: true
+  field_google_analytics_counter: true
   field_image_position: true
   field_margin: true
   field_meta_tags: true

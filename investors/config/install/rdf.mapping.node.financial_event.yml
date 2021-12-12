@@ -26,6 +26,9 @@ fieldMappings:
   field_financial_event_cover:
     properties:
       - 'schema:image'
+  field_google_analytics_counter:
+    properties:
+      - ''
   field_financial_event_intro:
     properties:
       - ''

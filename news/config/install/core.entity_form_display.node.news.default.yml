@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.news.body
     - field.field.node.news.field_contrast
+    - field.field.node.news.field_google_analytics_counter
     - field.field.node.news.field_image_position
     - field.field.node.news.field_margin
     - field.field.node.news.field_meta_tags
@@ -293,6 +294,15 @@ content:
     settings:
       body: body
     third_party_settings: {  }
+  google_analytics_counter:
+    type: int
+    '#maxlength': 255
+    '#default_value': 0
+    '#description': 'This field stores Google Analytics pageviews.'
+    weight: 104
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   langcode:
     type: language_select
     weight: 7
@@ -384,4 +394,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {}
+hidden:
+  field_google_analytics_counter: true

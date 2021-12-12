@@ -26,6 +26,9 @@ fieldMappings:
   field_event_cover:
     properties:
       - 'schema:image'
+  field_google_analytics_counter:
+    properties:
+      - ''
   field_event_introduction:
     properties:
       - ''
