@@ -71,7 +71,6 @@ dependencies:
   - path
   - path_alias
   - pathauto
-  - pink
   - publication_date
   - rabbit_hole
   - rdf
